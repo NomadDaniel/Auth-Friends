@@ -30,7 +30,7 @@ const AddFriendForm = ( props ) => {
           type='text'
           name='name'
           placeholder='username'
-          value={ addForm.name }
+          value={ addForm.name || '' }
           onChange={ handleChange }
         />
         <br /><br />
@@ -39,7 +39,7 @@ const AddFriendForm = ( props ) => {
           type='number'
           name='age'
           placeholder='age'
-          value={ addForm.age }
+          value={ addForm.age || '' }
           onChange={ handleChange }
         />
         <br /><br />
@@ -48,7 +48,7 @@ const AddFriendForm = ( props ) => {
           type='text'
           name='email'
           placeholder='email'
-          value={ addForm.email }
+          value={ addForm.email || '' }
           onChange={ handleChange }
         /><br /><br />
         <button type='submit'>Submit</button>
